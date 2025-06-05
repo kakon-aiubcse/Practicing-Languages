@@ -26,12 +26,7 @@ while i<=10 :
 
 #for loops which is sequential traverse
 
-num = [2,13,22]
-print("learning for loops")
-search = 13
+num = [1,2,3,22]
 for x in num : 
-    if(x == search):
-        print("found")
-        break
-    else:
-        print("not found")    
+    print(num)
+    
