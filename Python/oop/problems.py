@@ -17,3 +17,28 @@ class Student:
 
 s1 = Student("physics", "chemisty", "math", 88,97,66)
 print(s1.average())
+
+#problem 2
+#create account class with 2 attribute balance and account number
+#create methods for credit , debit and printing balance
+
+class Account :
+     def __init__(self, balance, accnumber):
+          self.balance = balance
+          self.accnumber = accnumber
+          print("Your Account Number is", accnumber)
+          print("Your Balance: ",balance,"BDT")
+     def debit(self, amount):
+          print("you have debitted ", amount, "BDT")
+          self.balance -= amount
+          print("your remaining balance: ", self.balance)
+     def credit(self, amount):
+          print("you have credited ", amount, "BDT")
+          self.balance += amount
+          print("your remaining balance: ", self.balance)
+
+ac1 = Account(17250, 424381)
+ac1.debit(15000)
+ac1.credit(18000)
+
+     
