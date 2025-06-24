@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>All Posts</h1>
+    <ul>
+      {% for data in datas %}
+      <li>{{ data.titles }} - {{ data.content }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
